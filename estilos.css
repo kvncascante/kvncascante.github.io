@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+	font-family: Arial, sans-serif;
+}
+
+/*MENU*/
+#menu{
+    justify-content: center;
+    background-color: #267188dc;
+    border: 4px solid #081b29;
+    margin:-1%;
+}
+
+#menu ul li {
+    
+    margin-bottom: -1px;
+    padding: 2px;
+}
+
+#menu ul li a{
+    
+    font-size:  28px;
+    transition: 1s;
+    color:antiquewhite;
+    
+}
+#menu ul li a:hover{
+    
+    background-color: #020b3ac7;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-style:dotted;
+    color: rgb(216, 128, 238)
+    
+
+}
+/*INICIO */
+.inicio{
+    background: linear-gradient(to top, rgba(0, 5, 8, 0.8), rgba(45, 79, 82, 0.308)),
+    url(img/fondo.gif);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: transparent;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 10px solid #081b29;
+    display: block;
+    width: 70%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+
+/*SOBRE MI*/
+.sobremi{
+    background-color: #081b29;
+    color: #fff;
+    padding: 50px 20px;
+}
+.sobremi .contenido-sobremi{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremi h2{
+    font-size: 42px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sobremi .contenido-sobremi p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.sobremi .contenido-sobremi p span{
+    color: #a2a1a3fb;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sobremi .fila{
+    display: flex;
+}
+
+.sobremi .fila .col
+{
+    width: 50%;
+}
+
+.sobremi .fila .col h3{
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: lightskyblue;
+}
+
+.sobremi .fila .col ul{
+    list-style: none;
+}
+
+.sobremi .fila .col ul li{
+    margin: -20px 0;
+    margin-left: -30px;
+    
+}
+
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: #a2a1a3fb;
+    width: 110px;
+    font-size: 20px;
+}
+.sobremi .fila .col ul li h2{
+    display: inline-block;
+    color:#fff;
+    width: 180px;
+    font-size: 20px;
+}
+
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: auto;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.sobremi button:hover .overlay{
+    width: 100%;
+}
+
+.sobremi button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+/* SKILLS*/
+.skills{
+    background-color: #363d42;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2{
+    font-size: 48px;
+    
+    text-align: center;
+    padding: 20px 0;
+
+}
+.skills .fila{
+    display: flex;
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.skills .fila .col .contenedor{
+
+    display: flex;
+    justify-content:flex-end;
+    padding-right: 50px;
+    
+}
+.skills .fila .col .techskill{
+    
+    padding: 10px;
+    
+    margin: auto;
+   
+    
+    
+}
+.skills .fila .col .techskill img{
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    background-color: aliceblue;
+    border-radius: 5%;
+    display:relative;
+    
+    margin:auto;
+     
+}
+
+.skills .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+/* CURRICULUM*/
+
+.certificado{
+    background-color: #1d3f5a;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.certificado .contenido-CV{
+    max-width: 1100px;
+    
+    margin: auto;
+}
+
+.certificado h2{
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0;
+
+}
+.certificado h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+    margin-left: 20px;
+    
+}
+.certificado .fila{
+    display: flex;
+    justify-content: space-between;
+}
+.certificado .fila .col{
+    width: 50%;
+    padding: 0 20px;
+    
+}
+
+.certificado .fila .item{
+    padding: 10px;
+    margin-bottom: 20px;
+    
+    background-color: #252A2E;
+    position:relative;
+    
+    
+}
+.certificado .fila  .item {
+    justify-content:flex-end;
+    display: flex;
+}
+.certificado .fila  .item div {
+    margin-right: auto;
+}
+
+
+.certificado .fila .item img{
+    width: 150px;
+    height: 110px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 3%;
+    border: 2px solid #e675b3;
+    cursor:pointer;
+    transition: 1s;
+}
+.certificado .fila .item img:hover{
+   transform: scale(1.3);
+   transition: 1s;
+}
+
+
+.certificado .fila .item  h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+    
+}
+.certificado .fila .item .lugar{
+    color: #c26672;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+.certificado .fila .item .fecha{
+    display: block;
+    color: #c26672;
+    margin-bottom: 10px;
+}
+
+/* PANTALLA PARA TELEFONOS*/
+@media (max-width:480px){
+
+    .certificado .fila .item{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .certificado .fila .item img{
+        width: 120px;
+        height: 110px;
+        margin:auto;
+        border-radius: 3%;
+
+    }   
+
+
+    .skills .fila .col .contenedor{
+
+        
+        
+        flex-wrap: wrap;
+        padding-right: 25px;
+        
+    }
+    .skills .fila .col .techskill{
+        
+        padding: 10px;
+        
+        margin: auto;
+       
+        
+        
+    }
+    .skills .fila .col .techskill img{
+        width: 50px;
+        height: 50px;
+        margin: 0 5px;
+        background-color: aliceblue;
+        border-radius: 5%;
+        display:flex;
+        
+        margin:auto;
+         
+    }
+
+
+}
+
+/* CONTACTO*/
+
+.contacto{
+    background-color: #0e0f0f;
+    color: #fff;
+    padding: 50px 20px;
+}
+.contacto .contenedor-contacto{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2{
+    font-size: 42px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto .contenedor-contacto .redes{
+    text-align: center;
+    margin:25px 0;
+}
+
+.contacto .contenedor-contacto .redes a{
+    
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.contacto .contenedor-contacto .redes a:hover{
+   
+    transform: scale(1.3);
+    transition: 1s;
+    background-color: #440781ea;
+}
